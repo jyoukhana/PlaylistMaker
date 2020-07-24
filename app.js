@@ -49,6 +49,12 @@ app.get('/lists/add', function (req, res) {
   })
 });
 
+//post route for submitting form to db
+app.post('/lists/add', function(req, res){
+  console.log('submitted')
+  return
+});
+
 //listening on server
 app.listen(3000, function () {
   console.log('server started on port 3000')
